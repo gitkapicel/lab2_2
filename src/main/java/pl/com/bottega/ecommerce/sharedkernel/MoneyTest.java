@@ -52,5 +52,14 @@ public class MoneyTest {
 		
 		assertThat(t1.lessThan(t2),is(true));
 	}
+	
+	@Test
+	public void test_lessOrEquals_to_t1value_and_t2value_if_one_value_is_less_from_other() {
+		Money t1 = new Money(10,"PLN");
+		Money t2 = new Money(90,"PLN");
+	
+		
+		assertThat(t1.lessOrEquals(t2),is(true));
+	}
 
 }
